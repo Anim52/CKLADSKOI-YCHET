@@ -1,0 +1,57 @@
+﻿<Page x:Class="Lopushok.Views.PageProductsWrite"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lopushok.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageProductsWrite">
+
+    <Grid Background="#FFFFFF">
+        <StackPanel HorizontalAlignment="Center" Width="800">
+            <TextBlock TextWrapping="Wrap" Padding="5" Text="Название продукции"/>
+            <TextBox x:Name="Name" TextWrapping="Wrap" Padding="5" Text="" />
+
+            <TextBlock TextWrapping="Wrap" Padding="5" Text="Тип материала"/>
+            <TextBox x:Name="MaterialId" TextWrapping="Wrap" Padding="5" Text="" />
+
+            <TextBlock TextWrapping="Wrap" Padding="5" Text="Артикль"/>
+            <TextBox x:Name="Articul" TextWrapping="Wrap" Padding="5" Text="" />
+
+            <TextBlock TextWrapping="Wrap" Padding="5" Text="Минимальная цена"/>
+            <TextBox x:Name="MinPrice" TextWrapping="Wrap" Padding="5" Text="" />
+
+            <TextBlock TextWrapping="Wrap" Padding="5" Text="Изображение"/>
+            <Button x:Name="ImagePath" Padding="5" Content="" Background="Transparent" Foreground="#FF000000" BorderBrush="#FFABADB3" Click="ImagePath_Click" RenderTransformOrigin="0.5,0.5" />
+
+            <TextBlock TextWrapping="Wrap" Padding="5" Text="Человек для производства"/>
+            <TextBox x:Name="PeopleMake" TextWrapping="Wrap" Padding="5" Text="" />
+
+            <TextBlock TextWrapping="Wrap" Padding="5" Text="Номер производства"/>
+            <TextBox x:Name="ManafacturAdrres" TextWrapping="Wrap" Padding="5" Text="" />
+
+            <Button x:Name="Save" 
+            Click="Save_Click"
+            Content="Сохранить" 
+            Grid.Row="2" 
+            Background="#00CC76" 
+            Foreground="#FFFFFF" 
+            BorderBrush="Transparent" 
+            FontSize="14" 
+            FontWeight="Medium" 
+            Margin="0,20,0,10" />
+
+            <Button x:Name="Back" 
+            Click="Back_Click"
+            Content="Отмена" 
+            Grid.Row="2" 
+            Background="#00CC76" 
+            Foreground="#FFFFFF" 
+            BorderBrush="Transparent" 
+            FontSize="14" 
+            FontWeight="Medium" 
+            Margin="0,1,0,1" />
+        </StackPanel>
+    </Grid>
+</Page>

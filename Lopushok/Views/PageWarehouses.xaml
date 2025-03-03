@@ -6,9 +6,10 @@
       xmlns:local="clr-namespace:Lopushok.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageWarehouses">
+      Title="PageWarehouses"
+       Background="#bbbbbb">
 
-    <Grid Background="#FFFFFF">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="15" />
             <ColumnDefinition Width="*" />
@@ -17,7 +18,7 @@
             <ColumnDefinition Width="15" />
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="DataGrid" Grid.Column="1" AutoGenerateColumns="False" CanUserAddRows="False" RowHeaderWidth="0">
+        <DataGrid x:Name="DataGrid" Grid.Column="1" AutoGenerateColumns="False" CanUserAddRows="False" RowHeaderWidth="0" Background="#bbbbbb">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Path=Id}" Header="ID" IsReadOnly="True" />
                 <DataGridTextColumn Binding="{Binding Path=Name}" Header="Название склада" Width="*" IsReadOnly="True" />
@@ -37,34 +38,40 @@
               Click="Add_Click"
               Content="Добавить" 
               Grid.Row="0" 
-              Background="#00CC76" 
+              Background="Red" 
               Foreground="#FFFFFF" 
               BorderBrush="Transparent" 
               FontSize="14" 
               FontWeight="Medium" 
-              Margin="0,1,0,1" />
+              Margin="0,1,0,1"
+                    Width="110"
+                    Style="{StaticResource LoginButton}"/>
 
             <Button x:Name="Update" 
               Click="Update_Click"
               Content="Изменить" 
               Grid.Row="1" 
-              Background="#00CC76" 
+              Background="Red" 
               Foreground="#FFFFFF" 
               BorderBrush="Transparent" 
               FontSize="14" 
               FontWeight="Medium" 
-              Margin="0,1,0,1" />
+              Margin="0,1,0,1"
+                    Width="110"
+                    Style="{StaticResource LoginButton}"/>
 
             <Button x:Name="Delet" 
               Click="Delet_Click"                    
               Content="Удалить" 
               Grid.Row="2" 
-              Background="#00CC76" 
+              Background="Red" 
               Foreground="#FFFFFF" 
               BorderBrush="Transparent" 
               FontSize="14" 
               FontWeight="Medium" 
-              Margin="0,1,0,1" />
+              Margin="0,1,0,1"
+                    Width="110"
+                    Style="{StaticResource LoginButton}"/>
         </Grid>
     </Grid>
 </Page>

@@ -6,40 +6,41 @@
       xmlns:local="clr-namespace:Lopushok.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageMaterialsWrite">
+      Title="PageMaterialsWrite"
+       Background="#bbbbbb">
 
-    <Grid Background="#FFFFFF">
+    <Grid >
         <StackPanel HorizontalAlignment="Center" Width="800">
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Название материала"/>
-            <TextBox x:Name="Name" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="Name" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Колличество материла"/>
-            <TextBox x:Name="CountMaterials" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="CountMaterials" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Тип материала"/>
-            <TextBox x:Name="TypeMaterial" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="TypeMaterial" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <Button x:Name="Save" 
             Click="Save_Click"
             Content="Сохранить" 
             Grid.Row="2" 
-            Background="#00CC76" 
+            Background="red" 
             Foreground="#FFFFFF" 
             BorderBrush="Transparent" 
             FontSize="14" 
             FontWeight="Medium" 
-            Margin="0,20,0,10" />
+            Margin="0,20,0,10" Style="{StaticResource LoginButton}"/>
 
             <Button x:Name="Back" 
             Click="Back_Click"
             Content="Отмена" 
             Grid.Row="2" 
-            Background="#00CC76" 
+            Background="Red" 
             Foreground="#FFFFFF" 
             BorderBrush="Transparent" 
             FontSize="14" 
             FontWeight="Medium" 
-            Margin="0,1,0,1" />
+            Margin="0,1,0,1" Style="{StaticResource LoginButton}"/>
         </StackPanel>
     </Grid>
 </Page>

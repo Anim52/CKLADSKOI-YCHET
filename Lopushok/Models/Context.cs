@@ -21,13 +21,13 @@ namespace Lopushok.Models
         public Context() {
             //Database.EnsureDeleted();
             Database.EnsureCreated();
-            //(localdb)\MSSQLLocalDB DESKTOP-HREVK3R
+            //(localdb)\MSSQLLocalDB 
         }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Lopushok;Database=Lopushok;Trusted_Connection=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=ZакупО4ка;Database=ZакупО4ка;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
 }

@@ -15,35 +15,37 @@
             <TextBox x:Name="Name" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <TextBlock TextWrapping="Wrap" Padding="5" Text="ИНН"/>
-            <TextBox x:Name="INN" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="INN" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Юридический адрес"/>
-            <TextBox x:Name="LegalAdress" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="LegalAdress" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Директор"/>
-            <TextBox x:Name="Directro" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="Directro" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <Button x:Name="Save" 
             Click="Save_Click"
             Content="Сохранить" 
             Grid.Row="2" 
-            Background="#00CC76" 
-            Foreground="#FFFFFF" 
-            BorderBrush="Transparent" 
+            HorizontalContentAlignment="Center"
+            Background="Red"
             FontSize="14" 
+            BorderBrush="Transparent" 
             FontWeight="Medium" 
-            Margin="0,20,0,10" />
+            Margin="0,20,0,10" 
+                    Style="{StaticResource  LoginButton}"/>
 
             <Button x:Name="Back" 
             Click="Back_Click"
             Content="Отмена" 
             Grid.Row="2" 
-            Background="#00CC76" 
-            Foreground="#FFFFFF" 
-            BorderBrush="Transparent" 
+            HorizontalContentAlignment="Center"
+            Background="Red"
             FontSize="14" 
+            BorderBrush="Transparent" 
             FontWeight="Medium" 
-            Margin="0,1,0,1" />
+            Margin="0,1,0,1" 
+                    Style="{StaticResource LoginButton}"/>
         </StackPanel>
     </Grid>
 </Page>

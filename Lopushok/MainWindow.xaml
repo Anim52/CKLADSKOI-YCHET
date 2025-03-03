@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lopushok"
         mc:Ignorable="d"
-        Title="ZакупО4ка" Height="650" Width="1200"
+        Title="ZакупО4ка" Height="690" Width="1200"
         MinHeight="500" MinWidth="1000"
         Background="#bbbbbb"
         >

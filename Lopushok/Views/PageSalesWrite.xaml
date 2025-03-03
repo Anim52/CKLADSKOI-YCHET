@@ -6,19 +6,20 @@
       xmlns:local="clr-namespace:Lopushok.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageSalesWrite">
+      Title="PageSalesWrite"
+       Background="#bbbbbb">
 
 
-    <Grid Background="#FFFFFF">
+    <Grid>
         <StackPanel HorizontalAlignment="Center" Width="800">
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Название агента"/>
-            <TextBox x:Name="AgentId" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="AgentId" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Продукт со склада"/>
-            <TextBox x:Name="WarehouseProductId" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="WarehouseProductId" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
 
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Колличество продаж товара"/>
-            <TextBox x:Name="SalesCount" TextWrapping="Wrap" Padding="5" Text="" />
+            <TextBox x:Name="SalesCount" TextWrapping="Wrap" Padding="5" Text="" Style="{StaticResource TextBoxStyle}"/>
             
             <TextBlock TextWrapping="Wrap" Padding="5" Text="Дата продажи"/>
             <DatePicker x:Name="SalesDate" />
@@ -27,23 +28,25 @@
             Click="Save_Click"
             Content="Сохранить" 
             Grid.Row="2" 
-            Background="#00CC76" 
+            Background="Red" 
             Foreground="#FFFFFF" 
             BorderBrush="Transparent" 
             FontSize="14" 
             FontWeight="Medium" 
-            Margin="0,20,0,10" />
+            Margin="0,20,0,10" 
+                    Style="{StaticResource LoginButton}"/>
 
             <Button x:Name="Back" 
             Click="Back_Click"
             Content="Отмена" 
             Grid.Row="2" 
-            Background="#00CC76" 
+            Background="Red" 
             Foreground="#FFFFFF" 
             BorderBrush="Transparent" 
             FontSize="14" 
             FontWeight="Medium" 
-            Margin="0,1,0,1" />
+            Margin="0,1,0,1" 
+                    Style="{StaticResource LoginButton}"/>
         </StackPanel>
     </Grid>
 </Page>
